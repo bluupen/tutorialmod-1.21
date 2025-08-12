@@ -1,6 +1,7 @@
 package bluupen.tutorialmod;
 
 import bluupen.tutorialmod.block.ModBlocks;
+import bluupen.tutorialmod.item.ModItemGroups;
 import bluupen.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
